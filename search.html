@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programma | Gentse Feesten 2023</title>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
+  <link rel="manifest" href="static/img/site.webmanifest">
+  <link rel="mask-icon" href="static/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link rel="stylesheet" href="static/css/fonts.css">
+  <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img id="header-logo" src=""></a>
+    <nav>
+      <ul>
+        <li><a class="nav_hover" href="../news.html">NIEUWS</a></li>
+        <li><a class="active" href="events/day.html">PROGRAMMA</a></li>
+        <li><a class="nav_hover" href="#">PRAKTISCH</a></li>
+        <li><a class="nav_hover" href="#">LIVE PARKEERINFO</a></li>
+      </ul>
+      <ul>
+        <li><a class="nav_hover" href="#">HOE NAAR GF23</a></li>
+        <li><a class="nav_hover_red" href="">NL <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path fill="currentColor"
+                d="m15.7 21.82-8.26-8.26a1.5 1.5 0 1 1 2.12-2.12l.001.001 6.14 6.138 6.14-6.139a1.5 1.5 0 1 1 2.122 2.121l-8.26 8.26z" />
+            </svg></a></li>
+        <li><a class="nav_hover_red" href="search.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path fill="currentColor"
+                d="m31.474 28.951-6.043-6.025a14.08 14.08 0 0 0 3.004-8.708A14.22 14.22 0 0 0 4.163 4.164a14.215 14.215 0 0 0-3.082 15.495 14.217 14.217 0 0 0 13.136 8.777 14.072 14.072 0 0 0 8.708-3.004l6.025 6.043a1.77 1.77 0 0 0 1.262.526 1.776 1.776 0 0 0 1.261-.526 1.77 1.77 0 0 0 .526-1.261 1.77 1.77 0 0 0-.526-1.262zM3.554 14.218a10.659 10.659 0 0 1 6.583-9.851 10.667 10.667 0 0 1 11.621 2.311 10.66 10.66 0 0 1 2.311 11.621 10.663 10.663 0 0 1-20.514-4.081z" />
+            </svg></a></li>
+        <li><a class="nav_hover_red" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 32">
+              <path fill="currentColor"
+                d="M0 0h54.825v3.404H0V0zm11.072 14.298h32.681v3.404H11.072v-3.404zM0 28.596h54.825V32H0v-3.404z" />
+            </svg></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="black_bg">
+    <section>
+      <h1>Programma doorzoeken</h1>
+      <form for="search">
+          <input type="text" name="search" placeholder="Doorzoek het programma...">
+          <button class="btn_input"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path fill="white" d="M31.474 28.951l-6.043-6.025c1.95-2.484 3.007-5.551 3.004-8.708 0-2.812-0.834-5.561-2.396-7.899s-3.783-4.16-6.381-5.237c-2.598-1.076-5.457-1.358-8.215-0.809s-5.291 1.903-7.28 3.891-3.342 4.522-3.891 7.28-0.267 5.617 0.809 8.215c1.076 2.598 2.898 4.818 5.237 6.381s5.087 2.396 7.899 2.396c3.157 0.004 6.225-1.054 8.708-3.004l6.025 6.043c0.165 0.167 0.362 0.299 0.578 0.389s0.449 0.137 0.684 0.137c0.235 0 0.467-0.047 0.683-0.137s0.413-0.223 0.578-0.389c0.167-0.165 0.299-0.362 0.389-0.578s0.137-0.449 0.137-0.683-0.046-0.467-0.137-0.684c-0.090-0.217-0.222-0.413-0.389-0.578zM3.554 14.218c0-2.109 0.625-4.171 1.797-5.924s2.837-3.12 4.786-3.927c1.948-0.807 4.092-1.018 6.161-0.607s3.969 1.427 5.46 2.918c1.491 1.491 2.507 3.391 2.918 5.46s0.2 4.212-0.607 6.161c-0.807 1.948-2.174 3.614-3.927 4.785s-3.815 1.797-5.924 1.797c-2.828 0-5.54-1.123-7.54-3.123s-3.123-4.712-3.123-7.54z"></path>
+            </svg>
+            </button>
+      </form>
+    </section>
+    <section id="events">
+      <div class="cards" id="cards"></div>
+    </section>
+  </main>
+  <footer>
+    <section class="black_bg">
+      <div class="red_circle">
+        <p>14-23 juli</p>
+      </div>
+      <div class="container flex_sb">
+        <img id="bottom-footer-logo" src="" alt="bottom footer logo">
+        <div class="container">
+          <a class="white-circle" href="#"><img src="../static/img/facebook.svg" alt="facebook link"></a>
+
+          <a class="white-circle" href="#"><img src="../static/img/flickr.svg" alt="flickr link"></a>
+
+          <a class="white-circle" href="#"><img src="../static/img/youtube.svg" alt="youtube link"></a>
+        </div>
+      </div>
+      <div class="container flex_sb">
+        <h1>#GF23</h1>
+        <div class="container">
+          <img id="avs" src="../static/img/AVS.png" alt="avs image">
+          <img src="../static/img/gent-footer.png" alt="an image with the text 'gent' in it">
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="../static/js/searchPage.js" type="module"></script>
+</body>
+</html>
